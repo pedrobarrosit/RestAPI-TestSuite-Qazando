@@ -16,7 +16,7 @@ public class ChangeData extends TestConfig {
 
     }
     @Test
-    public void changeData() throws IOException {
+    public void changeDatas() throws IOException {
         String jsonBody = changeObjects("src/test/java/data/changeData.json");
         given()
                 .contentType("application/json")
@@ -28,8 +28,6 @@ public class ChangeData extends TestConfig {
                 .log().all()
                 .statusCode(200)
                 .body("id", equalTo("ff80818192925da70192d59fdcdf1555"));
-
-
     }
     @Test
     public void changeName() throws IOException {

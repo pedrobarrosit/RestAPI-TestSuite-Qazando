@@ -1,4 +1,4 @@
-package pages;
+package helpers;
 
 import config.TestConfig;
 import java.io.IOException;
@@ -87,4 +87,5 @@ public class ObjectsPages extends TestConfig {
                 .statusCode(404)
                 .body("error", equalTo("Oject with id=19 was not found."));
     }
+
 }

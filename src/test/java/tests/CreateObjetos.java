@@ -1,7 +1,7 @@
 package tests;
 
 import org.junit.jupiter.api.Test;
-import pages.ObjectsPages;
+import helpers.ObjectsPages;
 import java.io.IOException;
 
 public class CreateObjetos extends ObjectsPages {
